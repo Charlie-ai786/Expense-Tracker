@@ -7,7 +7,7 @@ const Profile = () => {
         <div className="flex flex-col md:flex-row items-center gap-10">
 
           {/* Profile Image */}
-          <div className="shrink-0">
+          <div className="flex-shrink-0">
             <img
               src="/your-photo.jpg"
               alt="Profile"

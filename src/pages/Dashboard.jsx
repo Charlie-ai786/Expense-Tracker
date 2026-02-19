@@ -6,7 +6,6 @@ import LevelCard from "../components/cards/LevelCard";
 import LineChartCard from "../components/charts/LineChartCard";
 import ExpenseTable from "../components/expenses/ExpenseTable";
 import AddExpenseModal from "../components/expenses/AddExpenseModal";
-import Profile from "../components/profile/ProfileSection";
 
 const Dashboard = () => {
   const { totalAmount, expenses } = useExpenses();
@@ -60,8 +59,6 @@ const Dashboard = () => {
       
       {/* Expense Table */}
       <ExpenseTable expenses={expenses} />
-
-      <Profile />
 
       {/* Modal */}
       {isOpen && (

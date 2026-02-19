@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import Analytics from "./pages/Analytics";
 import Achievements from "./pages/Achievements";
 import Task from "./pages/Task";
+import Profile from "./components/profile/ProfileSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/Task" element={<Task />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </DashboardLayout>
     </Router>

@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 
 const DashboardLayout = ({ children }) => {
   return (
-    <div className="min-h-screen bg-[#0b0f1a] relative overflow-hidden">
+    <div className="min-h-screen bg-[#0b0f1a] relative ">
     <div className="relative z-10 flex">
     
       {/* Background Glow Effects */}
