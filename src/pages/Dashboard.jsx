@@ -24,14 +24,17 @@ const Dashboard = () => {
           Gaming Dashboard 🎮
         </h1>
 
-        <button
-          onClick={() => setIsOpen(true)}
+         <button
+          onClick={() => setIsOpen(!isOpen)}   // 🔥 TOGGLE FIX
           className="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-xl transition"
         >
-          + Add Expense
+          {isOpen ? "Close" : "+ Add Expense"}  {/* 🔥 Dynamic Text */}
         </button>
       </div>
-
+      {/* Modal */}
+      {isOpen && (
+        <AddExpenseModal closeModal={() => setIsOpen(false)} />
+      )}
       {/* Level Card */}
       <LevelCard />
 
@@ -59,11 +62,6 @@ const Dashboard = () => {
       
       {/* Expense Table */}
       <ExpenseTable expenses={expenses} />
-
-      {/* Modal */}
-      {isOpen && (
-        <AddExpenseModal closeModal={() => setIsOpen(false)} />
-      )}
 
     </div>
   );
