@@ -36,7 +36,7 @@ const LevelCard = () => {
         {/* Progress Bar */}
         <div className="w-full bg-gray-800 h-3 rounded-full overflow-hidden">
           <div
-            className="h-3 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 transition-all duration-1000"
+            className="h-3 rounded-full bg-linear-to-r from-purple-500 to-cyan-500 transition-all duration-1000"
             style={{ width: `${animatedProgress}%` }}
           ></div>
         </div>

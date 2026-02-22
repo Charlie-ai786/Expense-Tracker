@@ -8,7 +8,7 @@ const Sidebar = ({ isOpen }) => {
       to={path}
       className={`block px-4 py-3 rounded-xl transition ${
         location.pathname === path
-          ? "bg-gradient-to-r from-purple-500 to-cyan-500 text-white shadow-lg"
+          ? "bg-linear-to-r from-purple-500 to-cyan-500 text-white shadow-lg"
           : "text-gray-400 hover:text-white hover:bg-white/10"
       }`}
     >
@@ -26,7 +26,6 @@ const Sidebar = ({ isOpen }) => {
       `}
     >
       
-
       <nav className="space-y-4">
         {navItem("/", "Dashboard")}
         {navItem("/analytics", "Analytics")}
