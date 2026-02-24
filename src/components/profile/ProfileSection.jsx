@@ -9,7 +9,7 @@ const Profile = () => {
           {/* Profile Image */}
           <div className="shrink-0">
             <img
-              src="/your-photo.jpg"
+              src="/profile.jpg"
               alt="Profile"
               className="w-48 h-48 rounded-full object-cover border-4 border-indigo-500 shadow-lg"
             />
